@@ -12,6 +12,30 @@
         <button onclick="mostrar('buscador')">Buscador</button>
         <button onclick="mostrar('acronimo')">Acronimo</button>
     </div>
-    
+
+    <!--contador-->
+    <div id="contador" class="tool">
+        <h2>Cuenta cuenta</h2>
+        <textArea id="textoContador" rows="5" placeholder="Ingresa tu texto aqui...."></textArea>
+        <button onclick="ejecutarContador()">Ejecutar</button>
+        <div class="result" id="resultadoContador"></div>
+    </div>
+
+    <!--buscador-->
+     <div id="buscador" class="tool">
+        <h2>Busca y encontrarás</h2>
+        <textArea id="textoBuscador" rows="4" placeholder="Texto donde buscar"></textArea>
+        <button onclick="ejecutarBuscador()">Buscar</button>
+        <div class="result" id="resultadoBuscador"></div>
+    </div>
+
+
+    <!--acronimos-->
+     <div id="acronimo" class="tool">
+        <h2>Adivinaré el acrónimo</h2>
+        <textArea id="fraseAcronimo" type="text"placeholder="Ingresa una frase"></textArea>
+        <button onclick="generarAcronimo()">Generar</button>
+        <div class="result" id="resultadoAcronimo"></div>
+    </div>
 </body>
 </html>
