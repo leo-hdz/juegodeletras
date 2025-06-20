@@ -1,7 +1,7 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rebeccapurple;
-    color:antiquewhite;
+    color:rgb(19, 18, 18);
     padding: 20px;
 }
 
@@ -24,23 +24,34 @@ button{
 }
 
 .tool{
-    display:none;
-    background: white;
+    display:flex;
+    background:rgb(205, 147, 231);
     padding:20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,.0.1);
     margin-bottom:20px;
 }
 
+.tool label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
 textArea, input{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-    font-size:16px;
+width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 .result{
-    background: #e1f5fe;
+    background: #a7adb3;
     padding:10px;
     border-radius: 4px;
 }

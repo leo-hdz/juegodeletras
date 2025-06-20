@@ -11,36 +11,43 @@
 
     <h1>Juego de palabras</h1>
     <div class="button-container">
-        <button onclick="mostrar('contador')">Contador</button>
-        <button onclick="mostrar('buscador')">Buscador</button>
-        <button onclick="mostrar('acronimo')">Acronimo</button>
+        <button onclick="mostrar('contador')" id="btnContador">Contador</button>
+        <button onclick="mostrar('buscador')" id="btnBuscador">Buscador</button>
+        <button onclick="mostrar('acronimo')" id="btnAcronimo">Acronimo</button>
     </div>
 
     <!--contador-->
-    <div id="contador" class="tool">
+    <div id="contador" class="tool" style="display:none">
         <h2>Cuenta cuenta</h2>
         <textArea id="textoContador" rows="5" placeholder="Ingresa tu texto aqui...."></textArea>
+        
         <button onclick="ejecutarContador()">Ejecutar</button>
         <div class="result" id="resultadoContador"></div>
     </div>
 
     <!--buscador-->
-     <div id="buscador" class="tool">
+     <div id="buscador" class="tool" style="display:none">
         <h2>Busca y encontrarás</h2>
-        <textArea id="textoBuscador" rows="4" placeholder="Texto donde buscar"></textArea>
+        <p><em>Ingresa un texto largo arriba, y una palabra que desees encontrar abajo.</em></p>
+        <label for="textoBusqueda"><strong>Texto donde se buscará:</strong></label>
+        <textArea id="textoBusqueda" rows="4" placeholder="Texto donde buscar"></textArea>
+        <label for="palabraBusqueda"><strong>Palabra que deseas buscar:</strong></label>
+        <input id="palabraBusqueda" type="text" placeholder="palabra a buscar"><!--le faltaba le input para que interactuara con el dom-->
         <button onclick="ejecutarBuscador()">Buscar</button>
         <div class="result" id="resultadoBuscador"></div>
     </div>
 
 
     <!--acronimos-->
-     <div id="acronimo" class="tool">
+     <div id="acronimo" class="tool" style="display:none">
         <h2>Adivinaré el acrónimo</h2>
         <textArea id="fraseAcronimo" type="text"placeholder="Ingresa una frase"></textArea>
         <button onclick="generarAcronimo()">Generar</button>
         <div class="result" id="resultadoAcronimo"></div>
     </div>
+   
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRy0JD9x8rGY6xrsnHI4PcAGemkTrqs9Wieg&s" alt="mapachito" class="imagen-centro">
 </div>
+ <script src="palabras.js"></script>
 </body>
 </html>
